@@ -1,0 +1,4 @@
+GET  /api/health     liveness check
+GET  /api/state      full state snapshot
+POST /api/mode       {"mode": "cool", "fan": "high"}
+POST /api/setpoint   {"cool": 72, "heat": 66}
