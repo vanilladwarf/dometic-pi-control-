@@ -1,0 +1,5 @@
+dometic/state         JSON state blob (retained)
+dometic/status         online / offline (LWT)
+dometic/cmd/mode       off|cool|heat|fan_only|auto
+dometic/cmd/fan        low|high|auto
+dometic/cmd/setpoint   cool,heat e.g. 74,68
