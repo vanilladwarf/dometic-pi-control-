@@ -1,0 +1,4 @@
+POST /api/mode       change operating mode and fan speed
+POST /api/setpoint   set cool/heat setpoints
+GET  /api/state      read current state and temperatures
+GET  /api/health     liveness check
