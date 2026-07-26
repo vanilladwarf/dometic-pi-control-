@@ -1,0 +1,54 @@
+thermostat:
+  setpoint_cool_f: 74
+  setpoint_heat_f: 68
+  cool_deadband_f: 1.5
+  heat_deadband_f: 1.5
+  default_mode: off
+  default_fan: low
+
+protections:
+  min_compressor_off_secs: 120
+  interstage_delay_secs: 30
+  defrost_run_secs: 2400
+  defrost_cycle_secs: 270
+  defrost_recovery_secs: 30
+  heat_pump_lockout_f: 24
+  hard_lockout_f: 10
+  max_outdoor_for_cool_f: 110
+
+sensors:
+  room: bme280
+  outdoor: ds18b20
+  bme280_address: 0x76
+  bme280_bus: 1
+  ds18b20_id: ""
+
+pins:
+  fan_low: 17
+  fan_high: 27
+  cool: 22
+  heat_pump: 23
+  furnace: 24
+  comp1: 5
+  comp2: 6
+  rv1: 13
+  rv2: 19
+  interstage: 26
+  spare1: 16
+  spare2: 20
+
+api:
+  host: 0.0.0.0
+  port: 8080
+
+loop:
+  period_secs: 5
+  log_interval_secs: 30
+
+mqtt:
+  enabled: false
+  host: 127.0.0.1
+  port: 1883
+  base_topic: dometic
+  discovery: true
+  discovery_prefix: homeassistant
