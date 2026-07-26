@@ -1,0 +1,1 @@
+pycache/ *.py[cod] *.egg-info/ .venv/ .env config/config.yaml *.log .DS_Store .hypothesis/ .coverage htmlcov/ build/ dist/ .mypy_cache/ .ruff_cache/ .pytest_cache/ .idea/ .vscode/ mutmut-report/
