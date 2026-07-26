@@ -1,0 +1,16 @@
+__pycache__
+*.pyc
+*.pyo
+.git
+.gitignore
+.venv
+.hypothesis
+htmlcov
+.coverage
+build
+dist
+*.egg-info
+tests
+docs
+config/config.yaml
+.env
